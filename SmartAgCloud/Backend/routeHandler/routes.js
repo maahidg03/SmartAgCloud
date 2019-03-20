@@ -3,6 +3,6 @@
 //Has to be modified. GIven are smaples.
 
 module.exports = {
-  User: require("../linkedINController/applicant/loginRegister"),
-  ApplicantProfile: require("../linkedINController/applicant/profileRoute")
+  //User: require("../linkedINController/applicant/loginRegister"),
+  //ApplicantProfile: require("../linkedINController/applicant/profileRoute")
 };

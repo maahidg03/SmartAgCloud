@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 //var morgan = require("morgan");
-//var passport = require("passport");
+var passport = require("passport");
 var bodyParser = require("body-parser");
 var session = require("express-session");
 var cookieParser = require("cookie-parser");
@@ -98,18 +98,16 @@ app.use(
 //Allow Access Control
 
 //Leaving some sample routes for reference. Compare with project to understand
-app.use("/recruiter", routes.Recruiter);
-app.use("/applicant", routes.User); // by shivam 14/11
-app.use("/applicant/search", routes.Search); //  by shivam 14/11
+//app.use("/recruiter", routes.Recruiter);
+//app.use("/applicant", routes.User);
+//app.use("/applicant/search", routes.Search);
 
 //Uses Multer. Example. Has to be updated for SmartAgCloud appplication
-app.post("/resume", upload.array("resume", 4), (req, res) => {
-  //console.log("Req : ",req);
-  console.log("Resume Image : ", req.body);
-  res.send();
-});
-
-app.use("/applicationModule", routes.ApplySQL);
+//app.post("/resume", upload.array("resume", 4), (req, res) => {
+//console.log("Req : ",req);
+//console.log("Resume Image : ", req.body);
+//res.send();
+//});
 
 app.listen(3001);
 console.log("Server Listening on port 3001");

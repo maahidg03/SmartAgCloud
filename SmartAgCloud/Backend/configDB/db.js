@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
 mongoose.connect(
-  "mongodb://sarang4488:partner123@ds141514.mlab.com:41514/linkedin",
+  "mongodb+srv://SAC:Cmpe281@clustersac-mtjqh.mongodb.net/test?retryWrites=true",
   { useNewUrlParser: true }
 );
 
